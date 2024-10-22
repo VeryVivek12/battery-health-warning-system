@@ -3,4 +3,4 @@ server:
 
 spring:
   application:
-    name: health-data-processor
+    name: health-calculator

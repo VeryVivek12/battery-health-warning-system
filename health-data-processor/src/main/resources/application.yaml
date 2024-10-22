@@ -3,4 +3,9 @@ server:
 
 spring:
   application:
-    name: health-calculator
+    name: health-data-processor
+  kafka:
+    bootstrap-server: localhost:29092,localhost:39092
+    group-id: health-data-processor
+    incoming-topic: poc-battery-data-collection
+    outgoing-topic: poc-battery-data-processed
