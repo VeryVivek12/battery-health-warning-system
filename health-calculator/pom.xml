@@ -12,7 +12,7 @@
     <artifactId>health-calculator</artifactId>
     <version>0.0.1</version>
 
-    <name>Valtech Mobility:: BHWS :: HC</name>
+    <name>Valtech Mobility:: BHWS :: Health Calculator</name>
     <description>Health calculator</description>
 
     <properties>

@@ -9,11 +9,11 @@
         <version>0.0.1</version>
     </parent>
 
-    <artifactId>notification-service</artifactId>
+    <artifactId>car-emulator</artifactId>
     <version>0.0.1</version>
 
-    <name>Valtech Mobility:: BHWS :: Notification Service</name>
-    <description>Notification Service</description>
+    <name>Valtech Mobility:: BHWS :: Car Emulator</name>
+    <description>Car Emulator</description>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
@@ -24,11 +24,7 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-starter</artifactId>
         </dependency>
         <dependency>
             <groupId>org.apache.kafka</groupId>
@@ -44,23 +40,10 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <excludes>
-                        <exclude>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                        </exclude>
-                    </excludes>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>

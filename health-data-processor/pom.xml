@@ -12,7 +12,7 @@
     <artifactId>health-data-processor</artifactId>
     <version>0.0.1</version>
 
-    <name>Valtech Mobility:: BHWS :: HDP</name>
+    <name>Valtech Mobility:: BHWS :: Health Data Processor</name>
     <description>Health data processor</description>
 
     <properties>
