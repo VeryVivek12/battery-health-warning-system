@@ -24,7 +24,6 @@
     </properties>
 
     <modules>
-
         <module>health-data-processor</module>
         <module>health-calculator</module>
         <module>notification-service</module>

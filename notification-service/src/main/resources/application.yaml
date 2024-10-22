@@ -1,0 +1,6 @@
+server:
+  port: 7073
+
+spring:
+  application:
+    name: notification-service
