@@ -58,7 +58,7 @@ public class HealthDataPublisher {
                     log.info("Time: {} Car: {} health data: {}", dateFormat.format(new Date()), carId, batteryHealthData);
 
                     //wait for next data collection time
-                    Thread.sleep(5000);
+                    Thread.sleep(500);
                 }
             }
         };

@@ -4,6 +4,7 @@ import com.valtech.poc.core.dto.NotificationDTO;
 import com.valtech.poc.core.dto.NotificationDetail;
 import com.valtech.poc.core.dto.ProcessedBatteryHealthData;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.support.KafkaHeaders;
@@ -14,9 +15,9 @@ import static com.valtech.poc.core.Constants.AVERAGE;
 import static com.valtech.poc.core.Constants.CRITICAL;
 
 @Component
-@RequiredArgsConstructor
 public class BatteryHealthCalculator {
 
+    @Autowired
     private KafkaTemplate<String, NotificationDTO> kafkaTemplate;
 
     @KafkaListener(topics = "poc-battery-data-processed", groupId = "poc-battery-data-processed-group")
@@ -24,7 +25,8 @@ public class BatteryHealthCalculator {
 
         if (message.getRating().equals(AVERAGE) || message.getRating().equals(CRITICAL)) {
             //prepare message
-            var notificationDetailMessage = MessageBuilder.withPayload(NotificationDetail.builder()
+            var notificationDetailMessage = MessageBuilder.withPayload(NotificationDTO.builder()
+                            .carId(message.getCarId())
                             .type("Warning")
                             .description("Battery Health is declining.Currently at "
                                     + message.getAverageBatteryHealthPercentage()
