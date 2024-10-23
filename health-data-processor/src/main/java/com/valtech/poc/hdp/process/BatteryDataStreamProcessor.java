@@ -1,10 +1,12 @@
 package com.valtech.poc.hdp.process;
 
-
 import com.valtech.poc.core.dto.BatteryHealthData;
 import com.valtech.poc.core.dto.CellHealthData;
 import com.valtech.poc.core.dto.ProcessedBatteryHealthData;
+import com.valtech.poc.hdp.serde.ProcessedBatteryHealthDataSerde;
+import org.apache.kafka.common.serialization.Serdes;
 import org.apache.kafka.streams.kstream.KStream;
+import org.apache.kafka.streams.kstream.Produced;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -29,7 +31,7 @@ public class BatteryDataStreamProcessor {
                     .averageBatteryHealthPercentage((int) averageBatteryHealthPercentage)
                     .rating(getRating(averageBatteryHealthPercentage))
                     .build();
-        }).to(pocBatteryDataProcessed);
+        }).to(pocBatteryDataProcessed, Produced.with(Serdes.String(), new ProcessedBatteryHealthDataSerde()));
 
     }
 
