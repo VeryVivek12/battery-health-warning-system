@@ -1,7 +1,7 @@
 package com.valtech.poc.ce;
 
-import com.valtech.poc.ce.dto.BatteryHealthData;
-import com.valtech.poc.ce.dto.CellHealthData;
+import com.valtech.poc.core.dto.BatteryHealthData;
+import com.valtech.poc.core.dto.CellHealthData;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

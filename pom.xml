@@ -28,6 +28,7 @@
         <module>health-calculator</module>
         <module>notification-service</module>
         <module>car-emulator</module>
+        <module>core</module>
     </modules>
 
 </project>

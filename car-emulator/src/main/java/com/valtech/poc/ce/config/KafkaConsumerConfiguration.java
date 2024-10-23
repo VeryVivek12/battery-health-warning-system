@@ -1,6 +1,6 @@
 package com.valtech.poc.ce.config;
 
-import com.valtech.poc.ce.dto.NotificationDetail;
+import com.valtech.poc.core.dto.NotificationDetail;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.springframework.beans.factory.annotation.Value;

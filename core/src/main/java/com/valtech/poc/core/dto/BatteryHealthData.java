@@ -1,4 +1,4 @@
-package com.valtech.poc.hdp.dto;
+package com.valtech.poc.core.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,6 +1,6 @@
 package com.valtech.poc.ce;
 
-import com.valtech.poc.ce.dto.NotificationDetail;
+import com.valtech.poc.core.dto.NotificationDetail;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
 

@@ -1,6 +1,6 @@
 package com.valtech.poc.ce.config;
 
-import com.valtech.poc.ce.dto.BatteryHealthData;
+import com.valtech.poc.core.dto.BatteryHealthData;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
 import org.springframework.beans.factory.annotation.Value;

@@ -1,4 +1,4 @@
-package com.valtech.poc.hdp.dto;
+package com.valtech.poc.core.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class CellHealthData {
-    private Long id;
-    private Integer healthPercentage;
+public class NotificationDetail {
+    private String type;
+    private String description;
 }

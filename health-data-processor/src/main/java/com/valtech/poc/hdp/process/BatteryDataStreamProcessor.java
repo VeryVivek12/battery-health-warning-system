@@ -1,8 +1,9 @@
 package com.valtech.poc.hdp.process;
 
-import com.valtech.poc.hdp.dto.BatteryHealthData;
-import com.valtech.poc.hdp.dto.CellHealthData;
-import com.valtech.poc.hdp.dto.ProcessedBatteryHealthData;
+
+import com.valtech.poc.core.dto.BatteryHealthData;
+import com.valtech.poc.core.dto.CellHealthData;
+import com.valtech.poc.core.dto.ProcessedBatteryHealthData;
 import org.apache.kafka.streams.kstream.KStream;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;

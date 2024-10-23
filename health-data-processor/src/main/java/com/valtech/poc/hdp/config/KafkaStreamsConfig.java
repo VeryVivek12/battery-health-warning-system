@@ -1,6 +1,6 @@
 package com.valtech.poc.hdp.config;
 
-import com.valtech.poc.hdp.dto.BatteryHealthData;
+import com.valtech.poc.core.dto.BatteryHealthData;
 import com.valtech.poc.hdp.process.BatteryDataStreamProcessor;
 import com.valtech.poc.hdp.serde.BatteryHealthDataSerde;
 import lombok.RequiredArgsConstructor;
