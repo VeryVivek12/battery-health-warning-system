@@ -21,6 +21,9 @@ public class KafkaProducerConfiguration {
     private String bootstrapServers;
 
 
+    /**
+     * @return producer factory for battery health data collection
+     */
     @Bean
     public ProducerFactory<String, BatteryHealthData> producerFactory() {
         Map<String, Object> configProps = new HashMap<>();

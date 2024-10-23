@@ -20,6 +20,9 @@ public class KafkaConsumerConfiguration {
     @Value(value = "${spring.kafka.bootstrap-servers}")
     private String bootstrapServers;
 
+    /**
+     * @return consumer factory for Notifications
+     */
     @Bean
     public ConsumerFactory<String, NotificationDetail> consumerFactory() {
         Map<String, Object> configProps = new HashMap<>();

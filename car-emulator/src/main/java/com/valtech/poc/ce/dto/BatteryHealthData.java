@@ -10,7 +10,7 @@ import java.util.Set;
 @AllArgsConstructor
 @NoArgsConstructor
 public class BatteryHealthData {
-    private Long id;
+    private String id;
     private Set<CellHealthData> cellHealthDataSet;
 }
 

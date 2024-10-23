@@ -9,6 +9,8 @@ public class NotificationCenter {
 
     @KafkaListener(topics = "poc-ui-${spring.profiles.active}", groupId = "poc-test-${spring.profiles.active}-group")
     public void listen(NotificationDetail message) {
-        System.out.println("Received message: " + message.getDescription());
+        System.out.println("-----------------" + message.getType() + "-----------------");
+        System.out.println(message.getDescription());
+        System.out.println("----------------------------------");
     }
 }
