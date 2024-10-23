@@ -12,7 +12,7 @@
 
     <groupId>com.valtech.poc</groupId>
     <artifactId>battery-health-warning-system-parent</artifactId>
-    <version>0.0.1</version>
+    <version>0.1.0</version>
     <packaging>pom</packaging>
     <name>Valtech Mobility:: BHWS :: PARENT</name>
     <description>Parent POM for Battery Health Warning System.</description>
