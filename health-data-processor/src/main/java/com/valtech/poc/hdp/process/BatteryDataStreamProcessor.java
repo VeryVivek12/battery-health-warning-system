@@ -10,6 +10,8 @@ import org.apache.kafka.streams.kstream.Produced;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
+import static com.valtech.poc.core.Constants.*;
+
 @Component
 public class BatteryDataStreamProcessor {
 
@@ -37,13 +39,13 @@ public class BatteryDataStreamProcessor {
 
     private String getRating(double averageBatteryHealthPercentage) {
         if (averageBatteryHealthPercentage >= 95) {
-            return "Excellent";
+            return EXCELLENT;
         } else if (averageBatteryHealthPercentage >= 85) {
-            return "Good";
+            return GOOD;
         } else if (averageBatteryHealthPercentage >= 75) {
-            return "Average";
+            return AVERAGE;
         } else {
-            return "Critical";
+            return CRITICAL;
         }
     }
 }
