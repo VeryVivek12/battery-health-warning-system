@@ -1,6 +1,4 @@
 spring:
-  profiles:
-    active: car1
   kafka:
     bootstrap-servers: localhost:29092,localhost:39092
     data-collection-topic: poc-battery-data-collection

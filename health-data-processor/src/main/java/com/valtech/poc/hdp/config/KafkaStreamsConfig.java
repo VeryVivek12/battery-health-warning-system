@@ -33,16 +33,13 @@ import static org.apache.kafka.streams.StreamsConfig.*;
 @RequiredArgsConstructor
 public class KafkaStreamsConfig {
 
+    private final BatteryDataStreamProcessor batteryDataStreamProcessor;
     @Value(value = "${spring.kafka.bootstrap-server}")
     private String bootstrapAddress;
-
     @Value(value = "${spring.kafka.incoming-topic}")
     private String pocBatteryDataCollection;
-
     @Value(value = "${spring.kafka.group-id}")
     private String groupId;
-
-    private final BatteryDataStreamProcessor batteryDataStreamProcessor;
 
     @Bean(name = KafkaStreamsDefaultConfiguration.DEFAULT_STREAMS_CONFIG_BEAN_NAME)
     public KafkaStreamsConfiguration kStreamsConfig() {

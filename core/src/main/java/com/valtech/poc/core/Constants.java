@@ -6,4 +6,7 @@ public class Constants {
     public static final String GOOD = "Good";
     public static final String AVERAGE = "Average";
     public static final String CRITICAL = "Critical";
+
+    private Constants() {
+    }
 }

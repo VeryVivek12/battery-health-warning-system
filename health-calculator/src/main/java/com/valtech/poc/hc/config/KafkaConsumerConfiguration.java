@@ -1,6 +1,5 @@
 package com.valtech.poc.hc.config;
 
-import com.valtech.poc.core.dto.NotificationDetail;
 import com.valtech.poc.core.dto.ProcessedBatteryHealthData;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;

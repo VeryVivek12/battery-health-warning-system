@@ -1,9 +1,7 @@
 package com.valtech.poc.hc;
 
 import com.valtech.poc.core.dto.NotificationDTO;
-import com.valtech.poc.core.dto.NotificationDetail;
 import com.valtech.poc.core.dto.ProcessedBatteryHealthData;
-import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.kafka.core.KafkaTemplate;

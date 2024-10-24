@@ -35,7 +35,7 @@ public class HealthDataPublisher {
 
 
     @Bean
-    CommandLineRunner publishHealthData() throws InterruptedException {
+    CommandLineRunner publishHealthData() {
         return args -> {
 
             final List<Integer> healthDataPoints = List.of(100, 90, 80, 70);
